@@ -1,5 +1,5 @@
-from rest_api_demo.database import db
-from rest_api_demo.database.models import Post, Category
+from pfapi.database import db
+from pfapi.database.models import Post, Category
 
 
 def create_blog_post(data):

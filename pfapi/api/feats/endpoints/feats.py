@@ -4,10 +4,10 @@ from flask import logging
 from flask import request
 from flask_restplus import Resource
 
-from rest_api_demo.api.feats.parsers import pagination_arguments
-from rest_api_demo.api.feats.serializers import feat, page_of_feats
-from rest_api_demo.api.restplus import api
-from rest_api_demo.database.models import Feat
+from pfapi.api.feats.parsers import pagination_arguments
+from pfapi.api.feats.serializers import feat, page_of_feats
+from pfapi.api.restplus import api
+from pfapi.database.models import Feat
 
 log = logging.getLogger(__name__)
 

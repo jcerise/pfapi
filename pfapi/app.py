@@ -1,10 +1,10 @@
 import logging.config
 
 from flask import Flask, Blueprint
-from rest_api_demo import settings
-from rest_api_demo.api.feats.endpoints.feats import ns as feats_namespace
-from rest_api_demo.api.restplus import api
-from rest_api_demo.database import db
+from pfapi import settings
+from pfapi.api.feats.endpoints.feats import ns as feats_namespace
+from pfapi.api.restplus import api
+from pfapi.database import db
 
 app = Flask(__name__)
 logging.config.fileConfig('logging.conf')
